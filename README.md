@@ -66,7 +66,7 @@ You can also decode and print the instructions as text.
 E8 B0 E2 FF FF - call 0x7FF69DFD7BD0
 ```
 You can pass an integer or a pointer to zydis::instructions.
-The iteration only stops when Zydis fails to decode an instruction, therfore it's recommended to insert your own condition to break the loop when necessary.
+The iteration only stops when Zydis fails to decode an instruction, therefore it's recommended to insert your own condition to break the loop when necessary.
 
 ```cpp
 for (const auto& instruction : zydis::instructions(asm_function))
@@ -75,14 +75,16 @@ for (const auto& instruction : zydis::instructions(asm_function))
     {
         auto absolute_address = instruction.relative_to_absolute();
     
-        std::cout << "Mov absolute address: " << absolute_address << std::endl;
+        // absolute_address should be 0x7FF7EF5923B4
+        std::cout << std::hex << "Mov absolute address: " << absolute_address << std::endl;
     }
 
     if (instruction.info().mnemonic == ZYDIS_MNEMONIC_CALL)
     {
         auto absolute_address = instruction.relative_to_absolute();
 
-        std::cout << "Call absolute address: " << absolute_address << std::endl;
+        // absolute_address should be 0x7FF69DFD7BD0
+        std::cout << std::hex << "Call absolute address: " << absolute_address << std::endl;
     }
 
     if (instruction.info().mnemonic == ZYDIS_MNEMONIC_RET)
