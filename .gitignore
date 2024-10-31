@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/zydis_wrapper/x64/Release
+/x64/Release
+/.vs/zydis_wrapper
