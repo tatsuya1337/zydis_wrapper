@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="zydis_wrapper">
+      <UniqueIdentifier>{49470327-bc7c-4b69-8343-2d4bc69123bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zydis_wrapper\instruction">
+      <UniqueIdentifier>{e28a6465-25d2-4fa9-8457-8a39d62ebf8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zydis_wrapper\helper">
+      <UniqueIdentifier>{011d28d0-5c30-493c-935f-c530dab6f1ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zydis_wrapper\encoder">
+      <UniqueIdentifier>{703731b3-f83f-4bd2-b3b4-1d9e77050aef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zydis">
+      <UniqueIdentifier>{f1eda365-ffe7-494f-8b80-ea632196993e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="demo">
+      <UniqueIdentifier>{8fe835f8-c56a-4441-8961-2a4883849168}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zydis_wrapper.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="include\encoder\encoder.cpp">
+      <Filter>zydis_wrapper\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="include\encoder\encoded_instructions.cpp">
+      <Filter>zydis_wrapper\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="include\instruction\single_instruction.cpp">
+      <Filter>zydis_wrapper\instruction</Filter>
+    </ClCompile>
+    <ClCompile Include="include\instruction\instructions.cpp">
+      <Filter>zydis_wrapper\instruction</Filter>
+    </ClCompile>
+    <ClCompile Include="include\zydis\Zydis.c">
+      <Filter>zydis</Filter>
+    </ClCompile>
+    <ClCompile Include="demo\instruction_demo.cpp">
+      <Filter>demo</Filter>
+    </ClCompile>
+    <ClCompile Include="demo\encoder_demo.cpp">
+      <Filter>demo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\zydis_wrapper.hpp">
+      <Filter>zydis_wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoder\encoded_instructions.hpp">
+      <Filter>zydis_wrapper\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoder\encoder.hpp">
+      <Filter>zydis_wrapper\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\helper\find_predicates.hpp">
+      <Filter>zydis_wrapper\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\helper\types.hpp">
+      <Filter>zydis_wrapper\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\instruction\single_instruction.hpp">
+      <Filter>zydis_wrapper\instruction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\instruction\instructions.hpp">
+      <Filter>zydis_wrapper\instruction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zydis\Zydis.h">
+      <Filter>zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="demo\instruction_demo.hpp">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="demo\encoder_demo.hpp">
+      <Filter>demo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
