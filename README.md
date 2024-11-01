@@ -3,11 +3,11 @@
 **zydis_wrapper** is a modern C++ wrapper for [Zydis](https://github.com/zyantific/zydis), offering a user-friendly interface for disassembling and encoding Windows x64 Intel machine code. It simplifies the process by providing intuitive functions and abstractions, making it easier to work with low-level code.
 
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![C++ Version](https://img.shields.io/badge/C%2B%2B-17%2B-brightgreen)
+![C++ Version](https://img.shields.io/badge/C%2B%2B-20%2B-brightgreen)
 
 ## Features
 
-- **Modern C++ Interface**: Utilizes C++17 features for clean and efficient code.
+- **Modern C++ Interface**: Utilizes C++20 features for clean and efficient code.
 - **Dynamic Encoding**: Supports runtime encoding of instructions.
 - **Intuitive Iteration**: Provides easy-to-use iterators for traversing instructions.
 - **Utility Functions**: Allows you to access various elements of instructions with ease.
@@ -113,7 +113,7 @@ Focuses on iterating over instructions and interacting with them.
 
 ## Prerequisites
 
-- **C++17** or higher
+- **C++20** or higher
 - [Zydis Library](https://github.com/zyantific/zydis)
 - **Visual Studio 2022** (if you intend to use the `.sln` file provided in this repository)
 
